@@ -1012,9 +1012,12 @@ nav a:hover {
     font-size: 30px;
   }
 }
-
+/* ===========================
+   🌟 SKILL SECTION (FINAL)
+   =========================== */
 .skill-section {
   position: relative;
+  z-index: 10;              /* FIX background tidak muncul */
   min-height: 100vh;
   padding-top: 120px;
   overflow: hidden;
@@ -1027,7 +1030,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -1;              /* supaya tetap di belakang content */
 }
 
 .logo-skill-container {
@@ -1061,6 +1064,76 @@ nav a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+/* ===== BUBBLE WRAPPER ===== */
+
+.bubble-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1000px;
+}
+
+.bubble {
+  width: 130px;
+  height: 130px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  padding: 10px;
+}
+
+.bubble img {
+  width: 60px;
+  height: 60px;
+}
+
+.bubble p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.bubble:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .logo-skill {
+    width: 280px;
+  }
+
+  .bubble {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bubble {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bubble img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bubble p {
+    font-size: 14px;
+  }
 }
 
 /* ===== BUBBLE WRAPPER ===== */
