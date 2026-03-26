@@ -1,440 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syauqina Zhafirah Nur Fakhrana</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Syausyauu</title>
+  <meta name="description" content="Personal portfolio of Syausyauu featuring profile, education, projects, and contact information.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <img src="logo.gif" alt="Logo">
-        </div>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about-me">About</a>
-          <a href="#education">Education</a>
-          <a href="#projects">Project</a>
-          <a href="#certification">Certification</a>
-          <a href="#organization">Organizations</a>
-          <a href="#skill">Skill</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
 
+    <header class="site-header" id="siteHeader">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Go to Home">
+                <img src="logo.gif" alt="Logo">
+            </a>
 
-      <section id="home" class="home-section">
-        <!-- Background Video -->
-        <div class="video-bg">
-          <video autoplay muted loop>
-            <source src="homepage.mp4" type="video/mp4">
-          </video>
-        </div>
-    
-        <!-- Home Content Text -->
-        <div class="home-text">
-          <h1>Hi, I'm Syauqina Zhafirah Nur Fakhrana</h1>
-          <p>
-            I’m a 5th-semester Computer Science student at BINUS University, passionate about pursuing a career in Fullstack Development, Front End Development, Backend Development, IT Support, Web Development, Data Analysis, and UX/UI Design.
-            I often challenge myself with self-initiated projects to improve my technical and problem-solving skills. I’m passionate about creating innovative digital solutions, whether it’s in app development, data analysis, or user interface design.
-            I’m comfortable working both independently and as part of a team, from research all the way to project presentation.
-          </p>
-          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:0deb3e35-9ff1-4ca0-9935-bea671e4d828" class="resume-btn">VIEW CV</a> <!-- Link to About section in about.html -->
-    
-          <div class="social-icons">
-    <div class="social-icons">
-      <a href="https://wa.me/6281389313211" target="_blank">
-        <img src="wa.png" alt="WhatsApp">
-      </a>
-      <a href="https://www.tiktok.com/@syausyauu" target="_blank">
-        <img src="tt.png" alt="TikTok">
-      </a>
-      <a href="https://www.instagram.com/syausyauu" target="_blank">
-        <img src="ig.png" alt="Instagram">
-      </a>
-      <a href="https://github.com/syausyauu" target="_blank">
-        <img src="github.png" alt="GitHub">
-      </a>
-      <a href="https://www.linkedin.com/in/syauqina-zhafirah-nur-fakhrana-421352389/" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn">
-      </a>
-      <a href="https://www.figma.com/@syausyauu" target="_blank">
-        <img src="23.png" alt="Figma">
-      </a>
-    </div>
-    
-          </div>
-        </div>
-    
-        <div class="home-img">
-          <img src="poto.gif" alt="Syauqina Photo">
-        </div>
-    
-        <img src="gambarbawah.png" class="corner-img" alt="Corner Decoration">
-      </section>
+            <button
+                class="nav-toggle"
+                id="navToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="siteNav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
+            <nav class="site-nav" id="siteNav">
+                <a href="#home">Home</a>
+                <a href="#about-me">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#certification">Certification</a>
+                <a href="#organization">Organizations</a>
+                <a href="#skill">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <div class="video-bg">
+                <video autoplay muted loop playsinline>
+                    <source src="homepage.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
 
-      <section id="about-me" class="about-me-section">
-        <!-- Background image -->
-        <img src="aboutbg.gif" alt="background-image" class="background-about-img">
-        
-        <!-- Overlay and content -->
-        <div class="overlay">
-          <div class="content-container">
-            <!-- Logo about positioned above the profile image -->
+            <div class="home-content">
+                <div class="home-text">
+                    <span class="home-badge">Computer Science Student</span>
+
+                    <h1>Hi, I'm Syauqina Zhafirah Nur Fakhrana</h1>
+
+                    <p>
+                        I’m a 5th-semester Computer Science student at BINUS University, passionate about pursuing a career in Fullstack Development, Front End Development, Backend Development, IT Support, Web Development, Data Analysis, and UX/UI Design.
+                        I often challenge myself with self-initiated projects to improve my technical and problem-solving skills. I’m passionate about creating innovative digital solutions, whether it’s in app development, data analysis, or user interface design.
+                        I’m comfortable working both independently and as part of a team, from research all the way to project presentation.
+                    </p>
+
+                    <div class="home-actions">
+                        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:0deb3e35-9ff1-4ca0-9935-bea671e4d828" class="resume-btn" target="_blank" rel="noopener noreferrer">
+                        View CV
+                        </a>
+
+                        <a href="#about-me" class="secondary-btn">
+                            Explore More
+                        </a>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://wa.me/6281389313211" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <img src="wa.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://www.tiktok.com/@syausyauu" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                            <img src="tt.png" alt="TikTok">
+                        </a>
+                        <a href="https://www.instagram.com/syausyauu" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="ig.png" alt="Instagram">
+                        </a>
+                        <a href="https://github.com/syausyauu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <img src="github.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/syauqina-zhafirah-nur-fakhrana-421352389/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src="linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.figma.com/@syausyauu" target="_blank" rel="noopener noreferrer" aria-label="Figma">
+                            <img src="23.png" alt="Figma">
+                        </a>
+                    </div>
+                </div>
+                <div class="home-img">
+                    <div class="home-img-wrap">
+                        <img src="poto.gif" alt="Syauqina Photo">
+                    </div>
+                </div>
+            <img src="gambarbawah.png" class="corner-img" alt="Corner Decoration">
+        </section>
+
+    <!-- About Section -->
+    <!--
+    =========================
+    ABOUT SECTION
+    =========================-->
+
+    <section id="about-me" class="about-me-section">
+        <img src="aboutbg.gif" alt="Background Image" class="background-about-img">
+
+        <div class="about-overlay"></div>
+
+        <div class="about-inner">
             <div class="logo-about-container">
-              <img src="abt.png" alt="Logo about" class="logo-about">
+                <img src="abt.png" alt="About Logo" class="logo-about">
             </div>
-      
             <div class="profile-container">
-              <img src="binus.JPG" alt="Profile Image" class="profile-img">
-              <div class="content">
-                <p>Hello! I’m Syauqina Zhafirah Nur Fakhrana, a passionate 5th-semester Computer Science student at BINUS University. With a focus on Fullstack Development, Web Development, Data Analysis, and UX/UI Design, I’m dedicated to solving real-world problems through technical innovation. Beyond academics, I thrive in leadership and collaborative environments, actively participating in various organizational roles, including stage crew for theater productions and mentorship within HIMTI.</p>
-                <p>I’m driven by the challenge of continuously improving my skills and applying them to create user-centric digital solutions. My experience extends from technical expertise in languages like Java, Python, and SQL, to event management and external relations, where I’ve honed my communication, leadership, and problem-solving abilities. I’m committed to making a positive impact in the tech industry, eager to contribute my skills to meaningful projects and grow within dynamic teams.</p>
-              
-              </div>
+                <div class="profile-img-wrap">
+                    <img src="binus.JPG" alt="Profile Image" class="profile-img">
+                </div>
+                <!-- <div class="profile-img-wrap">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQEi2KBLD7wEgg/company-logo_200_200/company-logo_200_200/0/1716195109581/altonetwork_logo?e=1776297600&v=beta&t=CPSBvvWkQVL05KsE7mw2iWN8cw-RJOa7J8Y4RFgm7WM" alt="Profile Image" class="profile-img">
+                </div>-->
+                
+
+                <div class="about-content">
+                    <p>
+                        Hello! I’m Syauqina Zhafirah Nur Fakhrana, a passionate 5th-semester Computer Science student at BINUS University. I have a strong interest in Fullstack Development, Web Development, Data Analysis, and UX/UI Design, and I enjoy building digital solutions that are both functional and user-centered.
+                    </p>
+
+                    <p>
+                        Beyond academics, I also value collaboration, adaptability, and continuous growth. My experiences in organizational activities and team-based environments have helped me strengthen my communication, leadership, and problem-solving skills.
+                    </p>
+                </div>
+                <div class="about-alto-gallery single">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQEi2KBLD7wEgg/company-logo_200_200/company-logo_200_200/0/1716195109581/altonetwork_logo?e=1776297600&v=beta&t=CPSBvvWkQVL05KsE7mw2iWN8cw-RJOa7J8Y4RFgm7WM" alt="PT ALTO Experience" class="alto-img">
+                </div>
+                <div class="about-content">
+                    <span class="about-badge">Current Internship</span>
+                    <h3>Platform Engineer Intern — PT ALTO Network, Menara BCA</h3>
+                    <p>
+                        During my internship at PT ALTO, I have been developing a Java-based Metrics SDK to monitor service resources such as CPU, memory, disk usage, and thread count. The SDK is designed to support flexible monitoring integration, allowing services to send metrics either to Datadog or to an internal metrics collector based on environment configuration.
+                    </p>
+
+                    <p>
+                        My work includes building resource collection modules with JVM MXBean, implementing a scheduler for periodic metric collection, designing configurable routing logic with environment variables, and integrating the SDK into a real Spring Boot service. Through this experience, I have strengthened my understanding of system design, debugging, application lifecycle, and practical software integration in a production-oriented environment.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
+    <!-- Education Section
+    =========================
+    EDUCATION SECTION
+    =========================
+    -->
+    <section class="education-section" id="education">
+        <img src="edu.gif" alt="Education Background" class="background-education-img">
 
+        <div class="education-overlay"></div>
 
-
-
-    <section class="education-section " id="education">
-        <img src="edu.gif" alt="background" class="background-education-img">
-    
-        <div class="edu-title">
-          <img src="judul.gif" alt="Education Title">
-        </div>
-    
-        <div class="edu-container">
-          <!-- Left Board -->
-          <a href="https://binus.ac.id" target="_blank" class="edu-card left-card">
-            <div class="board">
-              <div class="string"></div>
-              <img src="Logo SoCS.png" alt="Binus Logo" class="edu-logo">
-              <h3>S1 Computer Science - Universitas Internasional Semen Indonesia</h3>
-              <p class="year">2023 - Present</p>
-              <p class="desc">
-                Currently pursuing a Bachelor's degree in Computer Science, focusing on database management,
-                web development, and software engineering. Actively involved in various projects and extracurricular
-                activities to enhance practical skills and knowledge in the field.
-              </p>
+        <div class="education-inner">
+            <div class="edu-title">
+                <img src="judul.gif" alt="Education Title">
             </div>
-          </a>
-    
-          <!-- Right Board -->
-          <a href="https://daaruttaqwa.sch.id" target="_blank" class="edu-card right-card">
-            <div class="board">
-              <div class="string"></div>
-              <img src="darta.png" alt="Daaruttaqwa Logo" class="edu-logo">
-              <h3>DAARUTTAQWA Integrated Boarding School</h3>
-              <p class="year">2020 - 2023</p>
-              <p class="desc">
-                Completed high school education majoring in Sciences, English literature and Arabic literature.
-              </p>
+
+            <div class="edu-container">
+                <a href="https://binus.ac.id" target="_blank" rel="noopener noreferrer" class="edu-card left-card">
+                    <div class="board">
+                        <div class="string"></div>
+                        <img src="Logo SoCS.png" alt="BINUS Logo" class="edu-logo">
+                        <h3>S1 Computer Science - BINUS University</h3>
+                        <p class="year">2023 - Present</p>
+                        <p class="desc">
+                            Currently pursuing a Bachelor's degree in Computer Science, focusing on database management, web development, and software engineering. Actively involved in various projects and extracurricular activities to enhance practical skills and knowledge in the field.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://daaruttaqwa.sch.id" target="_blank" rel="noopener noreferrer" class="edu-card right-card">
+                    <div class="board">
+                        <div class="string"></div>
+                        <img src="darta.png" alt="Daaruttaqwa Logo" class="edu-logo">
+                        <h3>Daaruttaqwa Integrated Boarding School</h3>
+                        <p class="year">2020 - 2023</p>
+                        <p class="desc">
+                            Completed high school education with a strong foundation in science, English literature, and Arabic literature, while developing discipline, communication, and academic consistency.
+                        </p>
+                    </div>
+                </a>
             </div>
-          </a>
         </div>
-      </section>
+    </section>
 
+    <!-- Projects Section
+    =========================
+    PROJECTS SECTION
+    ========================= 
+    -->
 
-      <section id="projects" class="projects-section">
-      <img src="Projectbg.gif" alt="background" class="background-skill-img">
-        <div class="logo-skill-container">
-          <img src="pjudul.gif" alt="Logo Skill" class="logo-skill">
+    <section id="projects" class="projects-section">
+        <img src="Projectbg.gif" alt="Projects Background" class="projects-bg">
+        <div class="projects-overlay"></div>
+
+        <div class="projects-inner">
+            <div class="projects-title">
+                <img src="pjudul.gif" alt="Projects Title" class="projects-title-img">
+            </div>
+
+            <div class="project-container">
+                <!-- Project 1 -->
+                <button
+                    class="project-card"
+                    type="button"
+                    data-title="PKMKC - Software Engineering"
+                    data-desc="This project is part of the final exam for the Advanced Information Systems Analysis and Design course. The platform, WashWhuuz, is a mobile-based web application that allows users to book vehicle washing services. As part of the team, I was responsible for dividing the tasks among my team members, ensuring the successful design and implementation of the user interface, and working on the back-end database. I used Visual Paradigm, Axure, and Microsoft Office tools to complete the project. In this project, I designed the input/output system interface, created use case descriptions, sequence diagrams, and package diagrams."
+                    data-pdf="[SE] AOL Project Overview.pdf"
+                    data-github="https://github.com/syausyauu/WashWhuuz"
+                    data-figma="https://www.figma.com/community/file/1569060454572954479/washwhuuz"
+                >
+                    <img src="wash.png" alt="WashWhuuz Project">
+                    <div class="project-card-body">
+                        <h3>Software Engineering - PKMKC</h3>
+                        <p>Website for car wash booking service, allowing users to book online and reduce waiting times.</p>
+                    </div>
+                </button>
+
+                <!-- Project 2 -->
+                <button
+                    class="project-card"
+                    type="button"
+                    data-title="Data Analysis for Flight Prediction"
+                    data-desc="This project used machine learning techniques like Random Forest and XGBoost to predict the concurrent number of flights at airports. The goal was to optimize flight scheduling and reduce delays. As part of the team, I was responsible for cleaning and preprocessing the dataset, tuning hyperparameters of the models, and evaluating performance metrics like R² and RMSE. The system was deployed using Streamlit for real-time prediction."
+                    data-pdf="PPT Kelompok 9 (wecompress.com).pdf"
+                    data-github="https://github.com/syausyauu/Prediksi-Jumlah-Penerbangan-yang-Sedang-Berlangsung-di-Udara"
+                >
+                    <img src="Concurrent Flights.gif" alt="Flight Prediction Project">
+                    <div class="project-card-body">
+                        <h3>Data Analysis for Flight Prediction</h3>
+                        <p>Using machine learning models like Random Forest and XGBoost for predicting flight departures.</p>
+                    </div>
+                </button>
+
+                <!-- Project 3 -->
+                <button
+                    class="project-card"
+                    type="button"
+                    data-title="Database Design - Cafe Management"
+                    data-desc="This project focuses on creating a robust database system for cafe operations. The goal was to design and implement a database structure that allows seamless management of cafe orders, payments, and employee data. My tasks involved creating the entity-relationship diagram (ERD), normalizing the database to ensure efficient data storage, and creating SQL queries to handle CRUD operations. I used PostgreSQL for database management and designed the front-end interface using React."
+                    data-pdf="ppt DATABASE DESIGN PEOJECT.pdf"
+                    data-github="https://github.com/syausyauu/cafemanagementsystem"
+                    data-figma="https://www.figma.com/community/file/1568713872749886333/database-design"
+                    data-website="https://cafemanagementsystem-nu.vercel.app/register"
+                >
+                    <img src="cafe.png" alt="Cafe Management Project">
+                    <div class="project-card-body">
+                        <h3>Cafe Management - Database Design</h3>
+                        <p>Designing a database for managing orders, payments, and staff data in a cafe environment.</p>
+                    </div>
+                </button>
+                <!-- Project 3 -->
+                <button
+                    class="project-card"
+                    type="button"
+                    data-title="Eco Report - Web-Based Cleanliness Reporting System"
+                    data-desc="Eco Report is a web-based cleanliness reporting system developed to help students report environmental issues on campus more easily and in a structured way. The system supports role-based access for students, staff, admin, and super admin, along with report status tracking from pending to process and done. This project was built using PHP, Laravel 11, MySQL, Bootstrap, and the MVC architecture to improve reporting efficiency, transparency, and documentation."
+                    data-pdf="ecoreport.pdf"
+                    data-github="#"
+                    data-figma="#"
+                    data-website="#"
+                >
+                    <img src="eco.gif" alt="Eco Report Project">
+                    <div class="project-card-body">
+                        <h3>Eco Report - Cleanliness Reporting System</h3>
+                        <p>A web-based system for reporting and monitoring campus cleanliness issues with role-based access and status tracking.</p>
+                    </div>
+                </button>
+                <!-- Project 4 -->
+                <button
+                    class="project-card"
+                    type="button"
+                    data-title="Sentiment Analysis of Budget Efficiency in Indonesia"
+                    data-desc="This project analyzes public sentiment on budget efficiency policies in Indonesia using data from X (Twitter). The workflow includes data preprocessing, automatic labeling using IndoBERT, and model comparison using SVM, RNN, and BiLSTM. Results show that neutral sentiment dominates, and SVM achieves the best performance compared to deep learning models."
+                    data-pdf="Sentiment Analysis of Public Opinions on Budget Efficiency in Indonesia Using Classification Methods on X Platform.pdf"
+                    data-github="#"
+                >
+                    <img src="Sentiment Analysis of Public Opinions on Budget Efficiency in Indonesia Using Classification Methods on X Platform.png" alt="Sentiment Analysis Project">
+                    <div class="project-card-body">
+                        <h3>Sentiment Analysis - Budget Efficiency Policy</h3>
+                        <p>Analyzing public opinion on government budget efficiency using NLP and machine learning models.</p>
+                    </div>
+                </button>
+                
+            </div>
         </div>
-        <div class="project-container">
-          
-          <!-- Project 1: Software Engineering - PKMKC -->
-          <div class="project-card" 
-            data-title="PKMKC - Software Engineering"
-            data-desc="This project is part of the final exam for the Advanced Information Systems Analysis and Design course. The platform, WashWhuuz, is a mobile-based web application that allows users to book vehicle washing services. As part of the team, I was responsible for dividing the tasks among my team members, ensuring the successful design and implementation of the user interface, and working on the back-end database. I used Visual Paradigm, Axure, and Microsoft Office tools to complete the project. In this project, I designed the input/output system interface, created use case descriptions, sequence diagrams, and package diagrams."
-            data-pdf="[SE] AOL Project Overview.pdf"
-            data-github="https://github.com/syausyauu/WashWhuuz"
-            data-figma="https://www.figma.com/community/file/1569060454572954479/washwhuuz">
-            <img src="wash.png" alt="Project 1">
-            <h3>Software Engineering - PKMKC</h3>
-            <p>Website for car wash booking service, allowing users to book online and reduce waiting times.</p>
-          </div>
-    
-          <!-- Project 2: Data Analysis -->
-          <div class="project-card" 
-            data-title="Data Analysis for Flight Prediction"
-            data-desc="This project used machine learning techniques like Random Forest and XGBoost to predict the concurrent number of flights at airports. The goal was to optimize flight scheduling and reduce delays. As part of the team, I was responsible for cleaning and preprocessing the dataset, tuning hyperparameters of the models, and evaluating performance metrics like R² and RMSE. The system was deployed using Streamlit for real-time prediction."
-            data-pdf="PPT Kelompok 9 (wecompress.com).pdf"
-            data-github="https://github.com/syausyauu/Prediksi-Jumlah-Penerbangan-yang-Sedang-Berlangsung-di-Udara">
-            <img src="Concurrent Flights.gif" alt="Project 2">
-            <h3>Data Analysis for Flight Prediction</h3>
-            <p>Using machine learning models like Random Forest and XGBoost for predicting flight departures.</p>
-          </div>
-    
-          <!-- Project 3: Database Design - Cafe Management -->
-          <div class="project-card" 
-            data-title="Database Design - Cafe Management"
-            data-desc="This project focuses on creating a robust database system for cafe operations. The goal was to design and implement a database structure that allows seamless management of cafe orders, payments, and employee data. My tasks involved creating the entity-relationship diagram (ERD), normalizing the database to ensure efficient data storage, and creating SQL queries to handle CRUD operations. I used PostgreSQL for database management and designed the front-end interface using React."
-            data-pdf="ppt DATABASE DESIGN PEOJECT.pdf"
-            data-github="https://github.com/syausyauu/cafemanagementsystem"
-            data-figma="https://www.figma.com/community/file/1568713872749886333/database-design"
-            data-website="https://cafemanagementsystem-nu.vercel.app/register">
-            <img src="cafe.png" alt="Project 3">
-            <h3>Cafe Management - Database Design</h3>
-            <p>Designing a database for managing orders, payments, and staff data in a cafe environment.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- CERTIFICATE -->
-      <section id="certif">
-        <img src="certif.gif" alt="background-image" class="background-certification-img">
-      </section>
-      
-      
-      <section id="certification" class="certification-gallery">
+        <div class="project-modal" id="projectModal" aria-hidden="true">
+            <div class="project-modal-backdrop" id="projectModalBackdrop"></div>
 
-        <div class="logo-certif-container">
-          <img src="certification.png" alt="Logo about" class="logo-certif">
-        </div>
-    
-        <!-- Cylinder Section -->
-        <div class="cyllinder-container">
-          <div class="cylinder" id="cylinder">
-            <img src="CERTIFICATE TECHNO.png" alt="">
-            <img src="CERTIFICATE SESVENT.png" alt="">
-            <img src="CERTIFICATE English Speech.png" alt="">
-            <img src="CERTIFICATE PMI.png" alt="">
-            <img src="CERTIFICATE teater.png" alt="">
-            <img src="CERTIFICATE indonesian Speech.png" alt="">
-            <img src="CERTIFICATE Coaching.png" alt="">
-          </div>
-          <button class="nav-button left" id="prevBtn">&#60;</button>
-          <button class="nav-button right" id="nextBtn">&#62;</button>
-        </div>
-    
-        <!-- Left and Right Buttons -->
-        
-      </section>
-    
+            <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+                <button class="project-modal-close" id="projectModalClose" type="button" aria-label="Close project detail">
+                    &times;
+                </button>
 
-      <section id="organization" class="organization-section">
-        <!-- Background image -->
+                <div class="project-modal-content">
+                    <h2 id="projectModalTitle"></h2>
+                    <p id="projectModalDesc"></p>
+
+                    <div class="project-modal-media" id="projectModalMedia"></div>
+
+                    <div class="project-modal-links" id="projectModalLinks"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section 
+    /* =========================
+   CERTIFICATION SECTION
+   ========================= */ 
+    -->
+    <section class="certification-gallery" id="certification">
+        <img src="certif.gif" alt="Certification Background" class="certification-bg">
+
+        <div class="certification-overlay"></div>
+
+        <div class="certification-inner">
+            <div class="certification-title-wrap">
+                <img src="certification.png" alt="Certification Title" class="certification-title">
+            </div>
+
+            <!-- ROW 1 -->
+            <div class="carousel-block">
+                <div class="carousel-stage">
+                    <button class="nav-button left" id="prevBtn" type="button" aria-label="Previous certificate group 1">
+                        &#60;
+                    </button>
+
+                    <div class="carousel-shell">
+                        <div class="cylinder" id="cylinder">
+                            <img src="CERTIFICATE TECHNO.png" alt="Certificate 1">
+                            <img src="CERTIFICATE SESVENT.png" alt="Certificate 2">
+                            <img src="CERTIFICATE English Speech.png" alt="Certificate 3">
+                            <img src="CERTIFICATE PMI.png" alt="Certificate 4">
+                            <img src="CERTIFICATE teater.png" alt="Certificate 5">
+                            <img src="CERTIFICATE indonesian Speech.png" alt="Certificate 6">
+                            <img src="CERTIFICATE Coaching.png" alt="Certificate 7">
+                        </div>
+                    </div>
+
+                    <button class="nav-button right" id="nextBtn" type="button" aria-label="Next certificate group 1">
+                        &#62;
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h1>
+                     <p>
+                        /
+                        <h2>
+                            .
+                        </h2>
+                     </p>
+                </h1>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="carousel-block second-block">
+                <div class="carousel-stage">
+                    <button class="nav-button left" id="prevBtn2" type="button" aria-label="Previous certificate group 2">
+                        &#60;
+                    </button>
+
+                    <div class="carousel-shell">
+                        <div class="cylinder" id="cylinder2">
+                            <img src="1CERTIFICATE.png" alt="Certificate A">
+                            <img src="2CERTIFICATE.png" alt="Certificate B">
+                            <img src="3CERTIFICATE.png" alt="Certificate C">
+                            <img src="4CERTIFICATE.png" alt="Certificate D">
+                            <img src="5CERTIFICATE.png" alt="Certificate E">
+                            <img src="6CERTIFICATE.png" alt="Certificate F">
+                        </div>
+                    </div>
+
+                    <button class="nav-button right" id="nextBtn2" type="button" aria-label="Next certificate group 2">
+                        &#62;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations Section 
+    /* =========================
+   Organizations SECTION
+   ========================= */ 
+    -->
+    <section class="org-section" id="organization">
         <img src="PinDown.io_@hittingen_1762520724.gif" 
              alt="background-image" 
              class="background-org-img">
-    
-    
-    
-        <!-- Organisational Experience Section -->
-        <div class="org-section">    
+        <div class="org-inner">
             <div class="logo-org-container">
-          <img src="orgnjdl.gif" alt="Logo about" class="logo-org">
-        </div>
-    
-          <div class="org-carousel">
-    
-            <!-- Card 1 -->
-            <a href="https://www.google.com/search?q=musikal+dangdut+kukejar+kau+sayang&sca_esv=f428b6d1b594cc50&rlz=1C1GCEA_enID1034ID1034&sxsrf=AE3TifMPxvWLy6hL3h9VKOZhyWWK0MSscQ%3A1762550878537&ei=XmQOadDHIKXkseMPkKbuwQc&oq=kukejar+kau+sayang&gs_lp=Egxnd3Mtd2l6LXNlcnAiEmt1a2VqYXIga2F1IHNheWFuZyoCCAAyCRAAGLADGAcYHjIJEAAYsAMYBxgeMgkQABiwAxgHGB4yCBAuGIAEGLADMgcQABiwAxgeMgcQABiwAxgeMgcQABiwAxgeMggQABiwAxjvBTILEAAYgAQYsAMYogQyCBAAGLADGO8FSLYhUABYAHACeACQAQCYATygATyqAQExuAEByAEAmAICoAIImAMAiAYBkAYKkgcBMqAHsgiyBwC4BwDCBwUwLjEuMcgHBg&sclient=gws-wiz-serp"><div class="org-card">
-              <img src="kukejar.png" alt="Kukejar Kau Sayang">
-              <div class="org-info">
-                <h2>Theatre Musical - Kukejar Kau Sayang</h2>
-                <p>Stage Crew | Oct 2024 - Present</p>
-              </div>
-              <div class="org-desc">
-                Assisted in stage setup, supported lighting and sound, and ensured smooth transitions throughout the show.
-              </div>
-            </div></a>
-    
-            <!-- Card 2 -->
-            <a href="https://ofog.himtibinus.or.id/"><div class="org-card">
-              <img src="himti.jpg" alt="HIMTI">
-              <div class="org-info">
-                <h2>Himpunan Mahasiswa Teknik Informatika</h2>
-                <p>Relation Expansion | Nov 2023 - Present</p>
-              </div>
-              <div class="org-desc">
-                Expanded HIMTI’s partnerships, managed external communications, and supported collaboration events.
-              </div>
-            </div></a>
-    
-            <!-- Card 3 -->
-            <a href="https://drive.google.com/file/d/1gzqjNeua3Aff-Rgljcjy-QhdSzMrUZwj/view?usp=sharing"><div class="org-card">
-              <img src="SESVENT HIMTI 2024.png" alt="SESVENT HIMTI">
-              <div class="org-info">
-                <h2>SESVENT HIMTI 2024</h2>
-                <p>Mentor | Sep 2024 - Oct 2024</p>
-              </div>
-              <div class="org-desc">
-                Guided participants on proposals and sponsorships, mentoring teams through workshops and real projects.
-              </div>
-            </div></a>
-    
-            <!-- Card 4 -->
-            <a href="https://binusianorg-my.sharepoint.com/personal/syauqina_fakhrana_binus_ac_id/_layouts/15/guestaccess.aspx?share=EbAwLai_hs9GuaNd8fshCzcBUQEyup43n9HE4z8a4BBm8w&rtime=dwB8K0ce3kg"><div class="org-card">
-              <img src="Background HIMTI KITlow.avif" alt="TECHNO HIMTI">
-              <div class="org-info">
-                <h2>TECHNO HIMTI 2024 - Transcend</h2>
-                <p>Event Division | Jun 2024 - Sep 2024</p>
-              </div>
-              <div class="org-desc">
-                Coordinated event logistics, handled technical operations, and ensured a smooth, enjoyable participant experience.
-              </div>
-            </div></a>
-    
-          </div>
-        </div>
-      </section>
+                <img src="orgnjdl.gif" alt="Organizations Title" class="logo-org">
+            </div>
 
-      <section class="skill-section" id="skill">
-        <img src="skil.gif" alt="background" class="background-skill-img">
+            <div class="org-carousel-wrap">
+                <button class="org-nav org-nav-left" type="button" aria-label="Scroll organizations left">
+                    &#60;
+                </button>
 
-    
-        <div class="logo-skill-container">
-          <img src="skiljdl.gif" alt="Logo Skill" class="logo-skill">
-        </div>
-    
-        <!-- Skill Categories -->
-        <div class="skills-container">
-    
-    <!-- Languages -->
-    <div class="skill-category">
-      <h2>Languages</h2>
-      <div class="bubble-wrapper">
-        <div class="bubble"><img src="1.png" alt=""><p>Java</p></div>
-        <div class="bubble"><img src="2.png" alt=""><p>JavaScript</p></div>
-        <div class="bubble"><img src="3.png" alt=""><p>Python</p></div>
-        <div class="bubble"><img src="4.png" alt=""><p>C++</p></div>
-        <div class="bubble"><img src="5.png" alt=""><p>Go</p></div>
-        <div class="bubble"><img src="6.png" alt=""><p>TypeScript</p></div>
-      </div>
-    </div>
-    
-    <!-- Web Development -->
-    <div class="skill-category">
-      <h2>Web Development</h2>
-      <div class="bubble-wrapper">
-        <div class="bubble"><img src="7.png" alt=""><p>HTML</p></div>
-        <div class="bubble"><img src="8.png" alt=""><p>CSS</p></div>
-        <div class="bubble"><img src= "9.png" alt=""><p>JavaScript</p></div>
-        <div class="bubble"><img src="10.png" alt=""><p>React</p></div>
-        <div class="bubble"><img src="11.png" alt=""><p>Tailwind</p></div>
-        <div class="bubble"><img src="12.png" alt=""><p>Laravel</p></div>
-      </div>
-    </div>
-    
-    <!-- Data & Database -->
-    <div class="skill-category">
-      <h2>Data & Database</h2>
-      <div class="bubble-wrapper">
-        <div class="bubble"><img src="13.png" alt=""><p>MySQL</p></div>
-        <div class="bubble"><img src="14.png" alt=""><p>PostgreSQL</p></div>
-        <div class="bubble"><img src="15.png" alt=""><p>MongoDB</p></div>
-        <div class="bubble"><img src="16.png" alt=""><p>Supabase</p></div>
-        <div class="bubble"><img src="17.png" alt=""><p>QGIS</p></div>
-        <div class="bubble"><img src="18.png" alt=""><p>RStudio</p></div>
-      </div>
-    </div>
-    
-    <!-- Tools -->
-    <div class="skill-category">
-      <h2>Tools</h2>
-      <div class="bubble-wrapper">
-        <div class="bubble"><img src="19.png" alt=""><p>VS Code</p></div>
-        <div class="bubble"><img src="20.png" alt=""><p>Docker</p></div>
-        <div class="bubble"><img src="21.png" alt=""><p>Git</p></div>
-        <div class="bubble"><img src="22.png" alt=""><p>GitHub</p></div>
-        <div class="bubble"><img src="23.png" alt=""><p>Figma</p></div>
-        <div class="bubble"><img src="24.png" alt=""><p>Canva</p></div>
-      </div>
-    </div>
-    
-    <!-- Soft Skills -->
-    <div class="skill-category">
-      <h2>Soft Skills</h2>
-      <div class="bubble-wrapper">
-        <div class="bubble"><img src="25.png" alt=""><p>Public Speaking</p></div>
-        <div class="bubble"><img src="26.png" alt=""><p>Team Communication</p></div>
-        <div class="bubble"><img src="27.png" alt=""><p>Leadership</p></div>
-        <div class="bubble"><img src="28.png" alt=""><p>Problem Solving</p></div>
-        <div class="bubble"><img src="29.png" alt=""><p>Adaptability</p></div>
-        <div class="bubble"><img src="30.png" alt=""><p>Strategic Planning</p></div>
-      </div>
-    </div>
-    
-        </div>
-      </section>
+                <div class="org-carousel" id="orgCarousel">
+                    <!-- Card 1 -->
+                    <a
+                        href="https://www.google.com/search?q=musikal+dangdut+kukejar+kau+sayang&sca_esv=f428b6d1b594cc50&rlz=1C1GCEA_enID1034ID1034&sxsrf=AE3TifMPxvWLy6hL3h9VKOZhyWWK0MSscQ%3A1762550878537&ei=XmQOadDHIKXkseMPkKbuwQc&oq=kukejar+kau+sayang&gs_lp=Egxnd3Mtd2l6LXNlcnAiEmt1a2VqYXIga2F1IHNheWFuZyoCCAAyCRAAGLADGAcYHjIJEAAYsAMYBxgeMgkQABiwAxgHGB4yCBAuGIAEGLADMgcQABiwAxgeMgcQABiwAxgeMgcQABiwAxgeMggQABiwAxjvBTILEAAYgAQYsAMYogQyCBAAGLADGO8FSLYhUABYAHACeACQAQCYATygATyqAQExuAEByAEAmAICoAIImAMAiAYBkAYKkgcBMqAHsgiyBwC4BwDCBwUwLjEuMcgHBg&sclient=gws-wiz-serp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="org-card"
+                    >
+                        <img src="kukejar.png" alt="Kukejar Kau Sayang">
+                        <div class="org-card-overlay"></div>
+                        <div class="org-info">
+                            <h2>Theatre Musical - Kukejar Kau Sayang</h2>
+                            <p>Stage Crew | Oct 2024 - Present</p>
+                        </div>
+                        <div class="org-desc">
+                            Assisted in stage setup, supported lighting and sound, and ensured smooth transitions throughout the show.
+                        </div>
+                    </a>
 
-      <section id="contact" class="contact-section">
-        <!-- Background image -->
-        <img src="Contact.gif" alt="background-contact-image" class="background-contact-img">
-        
-    
-      <div class="bubble-contact-bg">
-        <div class="bubble-contact"></div>
-        <div class="bubble-contact"></div>
-        <div class="bubble-contact"></div>
-        <div class="bubble-contact"></div>
-        <div class="bubble-contact"></div>
-      </div>
-    
-      <div class="contact-container">
-        <h2>Send Your Message 🌊</h2>
-        <p>Drop a little bubble of words — I’ll catch it soon ✨</p>
-        <form class="contact-form" action="https://formspree.io/f/xvgdpknl" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Write your message here..." required></textarea>
-      <button type="submit">Send Bubble 💌</button>
-    </form>
-    
-      </div>
+                    <!-- Card 2 -->
+                    <a
+                        href="https://ofog.himtibinus.or.id/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="org-card"
+                    >
+                        <img src="himti.jpg" alt="HIMTI">
+                        <div class="org-card-overlay"></div>
+                        <div class="org-info">
+                            <h2>Himpunan Mahasiswa Teknik Informatika</h2>
+                            <p>Relation Expansion | Nov 2023 - Present</p>
+                        </div>
+                        <div class="org-desc">
+                            Expanded HIMTI’s partnerships, managed external communications, and supported collaboration events.
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a
+                        href="https://drive.google.com/file/d/1gzqjNeua3Aff-Rgljcjy-QhdSzMrUZwj/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="org-card"
+                    >
+                        <img src="SESVENT HIMTI 2024.png" alt="SESVENT HIMTI">
+                        <div class="org-card-overlay"></div>
+                        <div class="org-info">
+                            <h2>SESVENT HIMTI 2024</h2>
+                            <p>Mentor | Sep 2024 - Oct 2024</p>
+                        </div>
+                        <div class="org-desc">
+                            Guided participants on proposals and sponsorships, mentoring teams through workshops and real projects.
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a
+                        href="https://binusianorg-my.sharepoint.com/personal/syauqina_fakhrana_binus_ac_id/_layouts/15/guestaccess.aspx?share=EbAwLai_hs9GuaNd8fshCzcBUQEyup43n9HE4z8a4BBm8w&rtime=dwB8K0ce3kg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="org-card"
+                    >
+                        <img src="Background HIMTI KITlow.avif" alt="TECHNO HIMTI">
+                        <div class="org-card-overlay"></div>
+                        <div class="org-info">
+                            <h2>TECHNO HIMTI 2024 - Transcend</h2>
+                            <p>Event Division | Jun 2024 - Sep 2024</p>
+                        </div>
+                        <div class="org-desc">
+                            Coordinated event logistics, handled technical operations, and ensured a smooth, enjoyable participant experience.
+                        </div>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a
+    href="https://www.main.bslc.or.id/home"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="org-card"
+>
+    <img src="hqdefault.jpg" alt="BSLC">
+    <div class="org-card-overlay"></div>
+    <div class="org-info">
+        <h2>Binus Student Learning Community</h2>
+        <p>Activist & Bootcamp | Nov 2023 - Dec 2024</p>
+    </div>
+    <div class="org-desc">
+        Organized and facilitated bootcamp and mentoring programs to support students' academic and soft skill development. Collaborated with the team to ensure smooth execution of learning activities and events.
+    </div>
+</a>
+
+                    <!-- Card 6 -->
+                    <a
+    href="https://www.sdgnederland.nl/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="org-card"
+>
+    <img src="sdgs.jpg" alt="SDG Nederland">
+    <div class="org-card-overlay"></div>
+    <div class="org-info">
+        <h2>SDG Nederland</h2>
+        <p>Volunteer in Education | 2023</p>
+    </div>
+    <div class="org-desc">
+        Contributed to educational projects on climate change awareness in the Jabodetabek area, focusing on flood impacts. Helped educate students and communities on adaptation and mitigation strategies.
+    </div>
+</a>
+                </div>
+
+                <button class="org-nav org-nav-right" type="button" aria-label="Scroll organizations right">
+                    &#62;
+                </button>
+            </div>
+        </div>
     </section>
+
+    <!-- Organizations Section 
+    /* =========================
+   Organizations SECTION
+   ========================= */ 
+    -->
+    <section class="skill-section" id="skill">
+        <img src="skil.gif" alt="Underwater Background" class="background-skill-img">
+        <div class="skill-overlay"></div>
+        <div class="water-ripple"></div>
+        <div class="ambient-bubbles" id="ambientBubbles"></div>
+        <div class="skill-inner">
+            <div class="logo-skill-container">
+                <img src="skiljdl.gif" alt="Skill Title" class="logo-skill">
+            </div>
+            <div class="skills-intro">
+                <p>
+                    A collection of technical and soft skills presented as glowing sea bubbles drifting through an underwater adventure.
+                </p>
+            </div>
+            <div class="skills-container">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h2>Languages</h2>
+                    <div class="bubble-wrapper">
+                        <div class="bubble"><img src="1.png" alt="Java"><p>Java</p></div>
+                        <div class="bubble"><img src="php.png" alt="JavaScript"><p>php</p></div>
+                        <div class="bubble"><img src="3.png" alt="Python"><p>Python</p></div>
+                        <div class="bubble"><img src="4.png" alt="C++"><p>Cpp</p></div>
+                        <div class="bubble"><img src="5.png" alt="Go"><p>Go</p></div>
+                        <div class="bubble"><img src="6.png" alt="TypeScript"><p>TypeScript</p></div>
+                    </div>
+                </div>
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h2>Web Development</h2>
+                    <div class="bubble-wrapper">
+                        <div class="bubble"><img src="7.png" alt="HTML"><p>HTML</p></div>
+                        <div class="bubble"><img src="8.png" alt="CSS"><p>CSS</p></div>
+                        <div class="bubble"><img src="9.png" alt="JavaScript"><p>JavaScript</p></div>
+                        <div class="bubble"><img src="10.png" alt="React"><p>React</p></div>
+                        <div class="bubble"><img src="Spring Boot.png" alt="Tailwind"><p>Spring Boot</p></div>
+                        <div class="bubble"><img src="12.png" alt="Laravel"><p>Laravel</p></div>
+                    </div>
+                </div>
+                <!-- Data & Database -->
+                <div class="skill-category">
+                    <h2>Data &amp; Database</h2>
+                    <div class="bubble-wrapper">
+                        <div class="bubble"><img src="13.png" alt="MySQL"><p>MySQL</p></div>
+                        <div class="bubble"><img src="14.png" alt="PostgreSQL"><p>PostgreSQL</p></div>
+                        <div class="bubble"><img src="15.png" alt="MongoDB"><p>MongoDB</p></div>
+                        <div class="bubble"><img src="AWS.png" alt="Supabase"><p>AWS</p></div>
+                        <div class="bubble"><img src="17.png" alt="QGIS"><p>QGIS</p></div>
+                        <div class="bubble"><img src="18.png" alt="RStudio"><p>RStudio</p></div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h2>Tools</h2>
+                    <div class="bubble-wrapper">
+                        <div class="bubble"><img src="19.png" alt="VS Code"><p>VS Code</p></div>
+                        <div class="bubble"><img src="20.png" alt="Docker"><p>Docker</p></div>
+                        <div class="bubble"><img src="21.png" alt="Git"><p>Git</p></div>
+                        <div class="bubble"><img src="22.png" alt="GitHub"><p>GitHub</p></div>
+                        <div class="bubble"><img src="23.png" alt="Figma"><p>Figma</p></div>
+                        <div class="bubble"><img src="24.png" alt="Canva"><p>Canva</p></div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <h2>Soft Skills</h2>
+                    <div class="bubble-wrapper">
+                        <div class="bubble"><img src="25.png" alt="Public Speaking"><p>Public Speaking</p></div>
+                        <div class="bubble"><img src="26.png" alt="Team Communication"><p>Team Communication</p></div>
+                        <div class="bubble"><img src="27.png" alt="Leadership"><p>Leadership</p></div>
+                        <div class="bubble"><img src="28.png" alt="Problem Solving"><p>Problem Solving</p></div>
+                        <div class="bubble"><img src="29.png" alt="Adaptability"><p>Adaptability</p></div>
+                        <div class="bubble"><img src="30.png" alt="Strategic Planning"><p>Strategic Planning</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section 
+    /* =========================
+   Contact SECTION
+   ========================= */ 
+    -->
+    <section id="contact" class="contact-section">
+        <img src="Contact.gif" alt="Underwater Contact Background" class="background-contact-img">
+        <div class="contact-overlay"></div>
+        <div class="bubble-contact-bg" aria-hidden="true">
+            <div class="bubble-contact"></div>
+            <div class="bubble-contact"></div>
+            <div class="bubble-contact"></div>
+            <div class="bubble-contact"></div>
+            <div class="bubble-contact"></div>
+            <div class="bubble-contact"></div>
+            <div class="bubble-contact"></div>
+        </div>
+
+        <div class="contact-inner">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2>Send Your Message 🌊</h2>
+                    <p>Drop a little bubble of words. I’ll catch it soon ✨</p>
+                </div>
+                <form
+                    class="contact-form"
+                    action="https://formspree.io/f/xvgdpknl"
+                    method="POST"
+                    novalidate
+                >
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="_replyto" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit-btn">
+                            <span class="btn-text">Send Bubble 💌</span>
+                    </button>
+                </form>
+                <div class="contact-socials">
+                    <a href="https://github.com/syausyauu" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/syauqina-zhafirah-nur-fakhrana-421352389/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.instagram.com/syausyauu" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+    <!-- Footer will go here -->
     <footer class="footer">
-      <div class="footer-content">
-        <img src="logo.gif" alt="Logo" class="footer-logo">
-        <div class="footer-left">
-          <p>Designed with 💖 by Syauqina Zhafirah Nur Fakhrana</p>
+        <div class="aurora"></div>
+        <div class="bubbles" aria-hidden="true">
+            <span style="--size: 14px; --left: 6%; --duration: 16s; --delay: 0s; --blur: 1px;"></span>
+            <span style="--size: 24px; --left: 15%; --duration: 20s; --delay: 2s; --blur: 0px;"></span>
+            <span style="--size: 18px; --left: 27%; --duration: 18s; --delay: 1s; --blur: 1px;"></span>
+            <span style="--size: 30px; --left: 39%; --duration: 22s; --delay: 3s; --blur: 0px;"></span>
+            <span style="--size: 12px; --left: 49%; --duration: 14s; --delay: 1.5s; --blur: 1px;"></span>
+            <span style="--size: 26px; --left: 61%; --duration: 21s; --delay: 4s; --blur: 0px;"></span>
+            <span style="--size: 16px; --left: 73%; --duration: 17s; --delay: 2.5s; --blur: 1px;"></span>
+            <span style="--size: 22px; --left: 84%; --duration: 19s; --delay: 0.8s; --blur: 0px;"></span>
+            <span style="--size: 13px; --left: 92%; --duration: 15s; --delay: 5s; --blur: 1px;"></span>
         </div>
-    
-        <div class="footer-middle">
-          <a href="mailto:syauqinazhafirah@gmail.com">✉️ Email Me</a>
-          <a href="https://www.linkedin.com/in/syau-syauu-35564a31a" target="_blank">💼 LinkedIn</a>
-          <a href="https://www.instagram.com/syausyauu" target="_blank">📸 Instagram</a>
-          <a href="https://www.tiktok.com/@syausyauu" target="_blank">🎬 TikTok</a>
+        <div class="footer-content">
+            <img src="logo.gif" alt="Logo" class="footer-logo">
+            <p class="footer-designed">
+                Designed with <span class="heart">💖</span> by Syauqina Zhafirah Nur Fakhrana
+            </p>
+            <div class="footer-socials">
+                <a href="mailto:syauqinazhafirah@gmail.com" class="footer-social" aria-label="Email">
+                    <span>✉️</span>
+                </a>
+                <a href="https://www.linkedin.com/in/syau-syauu-35564a31a" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+                   <span>💼</span>
+                </a>
+                <a href="https://www.instagram.com/syausyauu" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">
+                    <span>📸</span>
+                </a>
+                <a href="https://www.tiktok.com/@syausyauu" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="TikTok">
+                    <span>🎬</span>
+                </a>
+            </div>
+            <div class="footer-links-text">
+                <a href="mailto:syauqinazhafirah@gmail.com">Email Me</a>
+                <a href="https://www.linkedin.com/in/syau-syauu-35564a31a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/syausyauu" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.tiktok.com/@syausyauu" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+            <p class="footer-copyright">
+                © <span id="year"></span> Syauqina Zhafirah. All rights reserved.
+            </p>
         </div>
-    
-        <div class="footer-right">
-          <p>© <span id="year"></span> Syauqina Zhafirah. All rights reserved.</p>
-        </div>
-      </div>
-    
-      <div class="bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:34;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:20;"></span>
-      </div>
-    
-      <div class="aurora"></div>
     </footer>
-    
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    
 
   <script src="script.js"></script>
-  <script src="certification.js"></script>
-
-    
 </body>
-
 </html>
-
-
